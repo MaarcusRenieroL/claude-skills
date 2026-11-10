@@ -1,0 +1,11 @@
+{
+  "name": "mxrcxs17-skills",
+  "owner": { "name": "Maarcus Reniero L" },
+  "plugins": [
+    {
+      "name": "mxrcxs17",
+      "source": "./plugins/mxrcxs17",
+      "description": "Learn-first mentor skills plus an opt-in agent team, gates, and stack skills (Java, Angular, Spring, data, AI)."
+    }
+  ]
+}
