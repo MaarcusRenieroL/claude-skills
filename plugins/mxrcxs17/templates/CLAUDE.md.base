@@ -1,0 +1,33 @@
+# <repo name>
+
+<one sentence: what this is>
+
+Mode: <learn | ship>
+(learn = I write the code and you coach me with the `programming-foundations`
+rules; ship = agents write the code via `/mxrcxs17:build`.)
+
+## Stack (verified)
+- <framework + version>, <language>, <package manager>
+- Data: <DB + ORM>. API layer: <REST/tRPC/Hono/Spring>. Auth: <library>.
+
+## Commands
+- Dev: `<cmd>`
+- Gates: lint `<cmd>` | typecheck `<cmd>` | test `<cmd>` | build `<cmd>`
+- All gates at once: run the mxrcxs17 plugin's `scripts/gates.sh`
+
+## Layout
+- `<dir>`: <what lives here>
+
+## Conventions
+- <only repo-specific rules an agent would otherwise get wrong>
+
+## Do not touch
+- Lockfiles by hand, applied migrations, `.env*`, `.github/workflows/`, generated files in `<dir>`
+
+## Working rules
+- Think before coding: state assumptions, ask when unclear, surface tradeoffs.
+- Simplicity first: the minimum code that solves the task. No speculative features or abstractions.
+- Surgical changes: every changed line traces to the request. Mention unrelated problems; do not fix them.
+- Goal-driven: turn the task into a check (a failing test, a gate) and loop until it passes.
+- No new dependencies or CI changes without asking.
+(Working rules paraphrase the principles in the multica-ai/andrej-karpathy-skills CLAUDE.md, which is MIT-licensed.)
